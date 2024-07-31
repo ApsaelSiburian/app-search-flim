@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/app-search-flim/static/css/main.524e53d8.css",
-    "main.js": "/app-search-flim/static/js/main.567afd1c.js",
+    "main.js": "/app-search-flim/static/js/main.66eed052.js",
     "index.html": "/app-search-flim/index.html",
     "main.524e53d8.css.map": "/app-search-flim/static/css/main.524e53d8.css.map",
-    "main.567afd1c.js.map": "/app-search-flim/static/js/main.567afd1c.js.map"
+    "main.66eed052.js.map": "/app-search-flim/static/js/main.66eed052.js.map"
   },
   "entrypoints": [
     "static/css/main.524e53d8.css",
-    "static/js/main.567afd1c.js"
+    "static/js/main.66eed052.js"
   ]
 }
