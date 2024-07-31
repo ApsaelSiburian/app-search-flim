@@ -1,4 +1,6 @@
 app search movie menggunakan react js
 
-deploy App 
-https://indo-search-flim.vercel.app/
+untuk pengambilan API Publik saya menggunakan https://www.omdbapi.com/
+
+deploy App menggunakan Github
+- https://apsaelsiburian.github.io/app-search-flim/
