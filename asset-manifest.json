@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/%7Bapp-search-flim%7D/static/css/main.524e53d8.css",
+    "main.js": "/%7Bapp-search-flim%7D/static/js/main.567afd1c.js",
+    "index.html": "/%7Bapp-search-flim%7D/index.html",
+    "main.524e53d8.css.map": "/%7Bapp-search-flim%7D/static/css/main.524e53d8.css.map",
+    "main.567afd1c.js.map": "/%7Bapp-search-flim%7D/static/js/main.567afd1c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.524e53d8.css",
+    "static/js/main.567afd1c.js"
+  ]
+}
