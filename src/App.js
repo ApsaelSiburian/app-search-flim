@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import MovieCard from './components/MovieCard';
 import "./App.css";
 
-const API_URL = 'http://www.omdbapi.com?apikey=dd5ae328';
+const API_URL = 'https://www.omdbapi.com?apikey=dd5ae328';
 
 const App = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -10,7 +10,7 @@ const App = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  useEffect(() => {    /* lifecycle methods */
+  useEffect(() => {
     searchMovies("Film");
   }, []);
 
@@ -19,7 +19,7 @@ const App = () => {
     setError(null);
 
     try {
-      const response = await fetch(`${API_URL}&s=${title}`); /* pengambilan data API */
+      const response = await fetch(`${API_URL}&s=${title}`);
       const data = await response.json();
 
       if (data.Response === "True") {
@@ -41,32 +41,32 @@ const App = () => {
           <img src="img/logo.png" alt="logo" />
         </div>
         <nav>
-          <a href="app.js">Top Flim</a>
-          <a href="app.js">All Genre</a>
-          <a href="app.js">Populer</a>
-          <a href="app.js">Flim 2024</a>
+          <a href="#top-films">Top Films</a>
+          <a href="#all-genres">All Genres</a>
+          <a href="#popular">Popular</a>
+          <a href="#films-2024">Films 2024</a>
         </nav>
       </header>
 
-      <div className='search'> 
+      <div className='search'>
         <input
           value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)} /* form dan validasi */
+          onChange={(e) => setSearchTerm(e.target.value)}
           onKeyUp={(e) => {
             if (e.key === 'Enter') {
               searchMovies(searchTerm);
             }
           }}
-          placeholder="cari flim kesukaanmu..."
+          placeholder="Search for your favorite film..."
         />
         <button onClick={() => searchMovies(searchTerm)}>
           <img src="img/search.svg" alt='search' />
         </button>
       </div>
 
-      {isLoading ? (              /* loading */
-        <div className='loading'> 
-          <img src="img/loading.svg" alt="Loading" /> 
+      {isLoading ? (
+        <div className='loading'>
+          <img src="img/loading.svg" alt="Loading" />
         </div>
       ) : error ? (
         <div className='error'>
@@ -80,7 +80,7 @@ const App = () => {
         </div>
       ) : (
         <div className='empty'>
-          <h2>Tidak ada flim</h2>
+          <h2>No films found</h2>
         </div>
       )}
     </div>
