@@ -5,7 +5,7 @@ import RegistrationForm from './components/RegistrationForm';
 import UserProfile from './components/UserProfile';
 import "./App.css";
 
-const API_URL = 'https://www.omdbapi.com?apikey=dd5ae328';
+const API_URL = 'http://www.omdbapi.com?apikey=dd5ae328';
 
 const App = () => {
   const [searchTerm, setSearchTerm] = useState("");
